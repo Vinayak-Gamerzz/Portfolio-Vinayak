@@ -1,399 +1,663 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-            <title>Vinayak Tiwari</title>
+  <meta charset="UTF-8">
 
-        <meta name="description" content="Vinayak Tiwari — Student builder interested in technology, competitive programming, and engineering. Portfolio showcasing projects, achievements, and technical writing.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="keywords" content="Vinayak Tiwari, student portfolio, space technology, competitive programming, web developer, BitBuzz">
+  <meta name="description" content="Personal portfolio website of Vinayak, a student frontend developer.">
 
-        <meta name="author" content="Vinayak Tiwari">
+  <meta name="author" content="Vinayak">
 
-        <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B0F19">
 
-        <meta property="og:title" content="Vinayak Tiwari ">
+  <meta property="og:title" content="Vinayak | Portfolio">
 
-        <meta property="og:description" content="Student exploring space, technology, and engineering through projects, problem-solving, and writing.">
+  <meta property="og:description" content="Student developer portfolio built with HTML, CSS and JavaScript.">
 
-        <meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 
-        <meta property="og:url" content="https://Vinayak.bitbuzz.club">
+  <meta property="og:image" content="assets/images/og-card.svg">
 
-        <meta property="og:image" content="memoji.png">
+  <title>Vinayak | Portfolio</title>
 
+  <link rel="stylesheet" href="style.css">
 
-            <link rel="icon" href="memoji.png" />
-            <link rel="stylesheet" href="/style.css">
-            <link rel="stylesheet" href="/guestbook.css">
+</head>
 
-    </head>
+<body>
 
-    <body>
+  <div class="scroll-line"></div>
 
-        <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-container">
+  <header class="header" id="top">
 
-    <div class="nav-logo">Hridhaan Sahay</div>
+    <nav class="nav">
 
-    <!-- DESKTOP NAV -->
-    <ul class="nav-links">
-      <li><a href="/" data-route="home">Home</a></li>
-      <li><a href="#about" data-section="about">About</a></li>
-      <li><a href="#projects" data-section="projects">Projects</a></li>
-      <li><a href="#links" data-section="links">Links</a></li>
-    </ul>
-   
-    <!-- THEME -->
-    <button id="themeToggle" aria-label="Toggle theme">
-  <svg id="themeIcon" viewBox="0 0 24 24" width="22" height="22">
-    <path
-      d="M21 12.79A9 9 0 1111.21 3 
-         7 7 0 0021 12.79z"
-      fill="currentColor"
-    />
-  </svg>
-</button>
+      <a href="#top" class="logo">Vinayak</a>
 
-  </div>
 
-  <!-- MOBILE NAV -->
-  <div class="nav-mobile">
-    <a href="/" data-route="home">Home</a>
-    <a href="#about" data-section="about">About</a>
-    <a href="#projects" data-section="projects">Projects</a>
-    <a href="#links" data-section="links">Links</a>
-  </div>
-</nav>
+      <button class="menu-btn" type="button" aria-label="Open menu">
 
-  
- <main id="page-home">
+        <span></span>
+        <span></span>
 
-            <div class="hero-image">
-                <img src="Assets/Images/Me.jpeg" alt="Vinayak Tiwari" />
-            </div>
+      </button>
 
-            <div class="hero-center">
-                <h1 class="hero-name" id="heroName">Vinayak Tiwari</h1>
-                <p class="tagline"><span id="typewriter"></span></p>
+      <div class="nav-links">
 
-                <p class="statement">
-                Building projects<br />
-                with curiosity,<br />
-                and a love for engineering.
-                </p>
+        <a href="#about">About</a>
 
-                <p class="typing-line">
-                <span id="typingText"></span>
-                <span class="typing-cursor">|</span>
-                </p>
+        <a href="#skills">Skills</a>
 
+        <a href="#projects">Projects</a>
 
-            </div>
+        <a href="#achievements">Achievements</a>
 
+        <a href="#contact">Contact</a>
 
+      </div>
 
-        <section class="about" id="about">
+    </nav>
 
-                <h2 class="section-title">About</h2>
+  </header>
 
-            <div class="content-wrapper">
-                <p>
-                    Hello!
-                </p>
+  <main>
 
-                <p>
-                    I'm Vinayak Tiwari, A high-school student interested in 
-                        <span id="yellow-highlight">Space and Technology</span>. 
+    <section class="hero">
 
-                    I explore both through coding, competitive programming, hackathons, research, astrophotography, building gadgets and projects.
-                </p>
+      <div class="container hero-grid">
 
-                <p>
+        <div class="hero-text">
 
-                    As a student still learning and growing, I enjoy connecting with people who share similar passions.
+          <p class="small-title">Student Developer</p>
 
-                </p>
+          <h1>Hi, I'm Vinayak</h1>
 
-                <p>
+          <p class="typing-line">I am a <span id="typing-text">Student</span></p>
 
-                    I created 
+          <p>
 
-                        <a href="https://bitbuzz.club" target="_blank" class="premium-link">
+            I enjoy building simple, clean websites with HTML, CSS and JavaScript.
+            I am still learning every day, but I like taking small ideas and turning
+            them into real pages that work well on all screen sizes.
 
-                            <span id="red-underline">Bitbuzz</span>
+          </p>
 
-                        </a>, 
+          <div class="hero-buttons">
 
-                    A platform that delivers innovation, space, and technology news without all the politics and noise.
+            <a href="#projects" class="btn primary-btn">View Projects</a>
 
-                </p>
+            <a href="#contact" class="btn">Contact Me</a>
 
-                <p>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
 
-                    I also share what I learn through my 
+          </div>
 
-                        <a href="https://www.linkedin.com/in/Vinayak-Tiwari/" target="_blank" class="premium-link">  <span id="red-underline">Linkedin</span></a> 
-                    and 
+        </div>
 
-                        <a href="https://www.youtube.com/@bitbuzz-club" target="_blank" class="premium-link"> <span id="red-underline">Youtube</span></a>.
-                </p>
+        <div class="photo-box">
 
-                <p>
-                    You can Mail me at:
+          <img src="assets/images/Me.jpeg" alt="Vinayak Tiwari">
 
-                        <a href="mailto:hi@Vinayak.me" target="_blank" class="premium-link"> <span id="red-underline">hi@Vinayak.me</span></a>. 
-  
-                </p>
+        </div>
 
-            </div>
-
-        </section>
-
-        <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
-
-        <!-- LINKS -->
-
-        <section class="links reveal" id="links">
-
-                    <h2>Connect with me</h2>
-
-                        <p class="links-text">
-                            Here are my social handles, feel free to connect and say hi
-                        </p>
-
-            <div class="icon-links">
-
-                <!-- GitHub -->
-
-                    <a href="https://github.com/Vinayak-s" target="_blank" aria-label="GitHub">
-
-                        <svg viewBox="0 0 24 24">
-
-                            <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.38-3.88-1.38-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.2-3.07-.12-.3-.52-1.52.12-3.17 0 0 .97-.31 3.18 1.17a11 11 0 0 1 5.8 0c2.2-1.48 3.17-1.17 3.17-1.17.64 1.65.24 2.87.12 3.17.75.8 1.2 1.82 1.2 3.07 0 4.41-2.69 5.37-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.54A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
-
-                        </svg>
-
-                    </a>
-
-                <!-- LinkedIn -->
-
-                    <a href="https://www.linkedin.com/in/Vinayak-Tiwari" target="_blank" aria-label="LinkedIn">
-
-                        <svg viewBox="0 0 24 24">
-
-                            <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-5.25c0-1.25-.02-2.86-1.75-2.86-1.75 0-2.02 1.36-2.02 2.77V21H9z"/>
-
-                        </svg>
-
-                    </a>
-
-                <!-- YouTube -->
-
-                    <a href="https://www.youtube.com/@Astro-2HR" target="_blank" aria-label="YouTube">
-
-                        <svg viewBox="0 0 24 24">
-
-                            <path d="M23.5 6.5s-.23-1.64-.95-2.36c-.91-.95-1.93-.96-2.4-1.02C16.77 2.75 12 2.75 12 2.75s-4.77 0-8.14.37c-.47.06-1.49.07-2.4 1.02-.72.72-.95 2.36-.95 2.36S0 8.43 0 10.36v1.28c0 1.93.23 3.86.23 3.86s.23 1.64.95 2.36c.91.95 2.1.92 2.63 1.02 1.91.18 8.19.37 8.19.37s4.77-.01 8.14-.38c.47-.06 1.49-.07 2.4-1.02.72-.72.95-2.36.95-2.36s.23-1.93.23-3.86v-1.28c0-1.93-.23-3.86-.23-3.86zM9.75 14.75v-6l6 3-6 3z"/>
-
-                        </svg>
-
-                    </a>
-
-                <!-- Slack -->
-
-                    <a href="https://hackclub.enterprise.slack.com/team/U0A1984JZBM" target="_blank" aria-label="Slack">
-
-                        <svg viewBox="0 0 32 32">
-
-                            <path d="M16 6c5.1 0 7.247.576 8.336 1.665C25.425 8.754 26 10.9 26 16c0 5.1-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.335C8.753 6.576 10.9 6 16 6zm12 10C28 6 26 4 16 4S4 6 4 16s2 12 12 12 12-2 12-12z"/>
-
-                            <path d="M13.867 8a1.605 1.605 0 0 0-1.48.988 1.594 1.594 0 0 0 .001 1.224 1.598 1.598 0 0 0 1.479.988h1.6V9.6a1.596 1.596 0 0 0-.988-1.478A1.604 1.604 0 0 0 13.867 8zm0 4.267H9.6a1.604 1.604 0 0 0-1.479.988 1.596 1.596 0 0 0 .347 1.742 1.601 1.601 0 0 0 1.132.47h4.267a1.605 1.605 0 0 0 1.478-.989A1.596 1.596 0 0 0 15 12.736a1.602 1.602 0 0 0-1.132-.47zM24 13.867a1.596 1.596 0 0 0-.987-1.478 1.605 1.605 0 0 0-1.745.347 1.597 1.597 0 0 0-.468 1.13v1.6h1.6a1.605 1.605 0 0 0 1.479-.988c.08-.194.121-.402.121-.611zm-4.267 0V9.6a1.594 1.594 0 0 0-.987-1.478 1.605 1.605 0 0 0-1.745.347 1.6 1.6 0 0 0-.468 1.131v4.267a1.596 1.596 0 0 0 .987 1.477 1.605 1.605 0 0 0 1.226 0 1.601 1.601 0 0 0 .987-1.477zM18.133 24a1.603 1.603 0 0 0 1.6-1.6 1.595 1.595 0 0 0-.987-1.478 1.605 1.605 0 0 0-.613-.122h-1.6v1.6a1.597 1.597 0 0 0 1.6 1.6zm0-4.267H22.4a1.605 1.605 0 0 0 1.479-.988 1.596 1.596 0 0 0-.347-1.742 1.6 1.6 0 0 0-1.132-.47h-4.267a1.605 1.605 0 0 0-1.478.989A1.596 1.596 0 0 0 17 19.264a1.602 1.602 0 0 0 1.132.47zM8 18.133a1.596 1.596 0 0 0 1.6 1.6 1.605 1.605 0 0 0 1.479-.988c.08-.194.121-.402.121-.612v-1.6H9.6a1.605 1.605 0 0 0-1.479.989c-.08.194-.121.402-.121.611zm4.267 0V22.4a1.595 1.595 0 0 0 .987 1.478 1.603 1.603 0 0 0 1.745-.347 1.6 1.6 0 0 0 .468-1.131v-4.266a1.597 1.597 0 0 0-1.6-1.6 1.603 1.603 0 0 0-1.6 1.6z"/>
-
-                        </svg>
-
-                    </a>
-
-    
-            </div>
-        </section>
-
-  
-    <!-- PROJECTS -->
-
-    <section class="projects" id="projects">
-
-                    <h2>Projects</h2>
-
-                        <p class="projects-subtitle">
-
-                            Some things I've built across hardware, web, and experiments.
-
-                        </p>
-
-                        <p class="projects-subtitle">
-
-                            Most of my projects are on GitHub view them
-
-                            <a href="https://github.com/Vinayak-s/" target="_blank" class="premium-link"> <span id="red-underline">here</span></a>. 
-
-                        </p>   
-
-            <div class="projects-grid">
-
-        <!-- BitBuzz -->
-
-            <div class="project-card">
-
-                    <span class="tag">Web · Platform</span>
-
-                        <img src="Screenshot 2026-05-09 172150.png" alt="BitBuzz project image" />
-
-                    <h3>BitBuzz</h3>
-
-                        <p>
-
-                            A global platform with 23,500+ users from 50+ countries,
-                            delivering news about innovation, space, and tech news with out any bias or politics.
-          
-                        </p>
-
-                <div class="project-links">
-
-                    <a href="https://www.bitbuzz.club/" target="_blank">Visit →</a>
-
-                </div>
-
-            </div>
-
-        <!-- Twilara Hack Club -->
-
-            <div class="project-card">
-
-                        <span class="tag">Leadership · Hack Club</span>
-
-                            <img class="project-thumb" src="Screenshot 2025-12-27 232123.png" alt="Twilara Hack Club Thumbnail">
-
-                            <img class="hackclub-badge" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club Badge" width="25"/>
-
-                    <h3>Twilara — Hack Club</h3>
-
-                        <p>
-
-                            I co-founded and lead Twilara — a Hack Club chapter at SRGS Noida where we build 
-                            robots, software, games & hardware. A student-led community supported by Hack Club 
-                            where we ship ideas by building.
-
-                        </p>
-
-                <div class="project-links">
-
-                    <a href="https://hackers.bitbuzz.club" target="_blank">Visit →</a>
-
-                </div>
-
-            </div>
-
-
-        <!-- Chanakya AI -->
-
-            <div class="project-card">
-
-                        <span class="tag">AI · Chatbot</span>
-
-                        <img src="Screenshot 2026-05-09 172557.png" alt="Chanakya AI project image" />
-
-                    <h3>Chanakya AI</h3>
-
-                        <p>
-
-                        An AI Research & Fact-Checking Assistant built for BitBuzz, inspired by Chanakya's principles
-                        to provide strategic and wisdom-driven responses.
-                
-                        </p>
-
-                <div class="project-links">
-
-                    <a href="https://www.bitbuzz.club/chanakya-ai" target="_blank">Explore →</a>
-
-                </div>
-            
-            </div>
-
-
-      
-        <!-- Focus Orb -->
-
-            <div class="project-card">
-                
-                    <span class="tag">Web · StoryTelling</span>
-
-                        <img src="https://cdn.hackclub.com/019e3814-c2d8-7030-9574-9f87dafd9d9e/image.png" alt="Focus Orb project image"/>
-
-                    <h3>The Big Bang</h3>
-
-                        <p>
-
-                            A Site to Storytell the creation of Universe due to Big Bang
-
-                        </p>
-
-                <div class="project-links">
-
-                    <a href="https://the-big-bang-project.netlify.app/" target="_blank">Open GitHub →</a>
-
-                </div>
-
-            </div>
-
-        <!-- Astronomy Macropad -->
-            <div class="project-card">
-
-                    <span class="tag">Web · YSWS Program</span>
-
-                        <img src="https://cdn.hackclub.com/019e7c6e-c5b8-7c74-9591-1b11693e32d1/image.png" alt="Focus Orb project image"/>
-
-                    <h3>Arcade</h3>
-
-                        <p>
-
-                            A Site I made for an YSWS(You Ship We Ship) Program at Hack Club where teens submit there projects related to theme of Arcade and get rewarded for there projects, I am also the organizer of this event
-
-                        </p>
-
-                <div class="project-links">
-
-                    <a href="https://arcade-ysws.vercel.app/" target="_blank">Visit Site →</a>
-
-                </div>
-
-            </div>
+      </div>
 
     </section>
 
-  <section class="achievements-cta">
-  <div class="cta-card">
-    <h3>Vinayak's Scrapbook</h3>
+    <section class="section" id="about">
 
-    <p>
-      The archive. Every project, every lesson, every mistake that is worth keeping.
-    </p>
+      <div class="container two-column">
 
-    <a href="https://scrapbook.Vinayak.me/" class="cta-btn" target="_blank" rel="noopener noreferrer">
-      Visit Scrapbook →
-    </a>
+        <div>
 
-  </div>
+          <p class="small-title">About</p>
 
-</section>
+          <h2>Trying to get better one project at a time.</h2>
 
-    </body>
+        </div>
+
+        <div>
+
+          <p>
+
+            I am a student developer who likes frontend development because it gives
+            quick feedback. You write something, refresh the page, and immediately
+            see what improved and what still feels off.
+
+          </p>
+
+          <p>
+
+            Most of my practice is around layouts, responsive design, JavaScript
+            interactions, GitHub, and making projects look neat without making them
+            confusing.
+
+          </p>
+
+          <div class="quick-stats">
+
+            <div>
+
+              <strong>50+</strong>
+
+              <span>Practice projects</span>
+
+            </div>
+
+            <div>
+
+              <strong>15</strong>
+
+              <span>Hackathons</span>
+
+            </div>
+
+            <div>
+
+              <strong>2</strong>
+
+              <span>Portfolio site</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="skills">
+
+      <div class="container">
+
+        <p class="small-title">Skills</p>
+
+        <h2>Things I use often</h2>
+
+        <div class="skills-list">
+
+          <div class="skill" data-level="90">
+
+            <div><b>HTML</b><span>90%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="85">
+
+            <div><b>CSS</b><span>85%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="75">
+
+            <div><b>JavaScript</b><span>75%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="70">
+
+            <div><b>Git</b><span>70%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="80">
+
+            <div><b>GitHub</b><span>80%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="82">
+            
+            <div><b>Responsive Design</b><span>82%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="68">
+
+            <div><b>Figma</b><span>68%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="88">
+
+            <div><b>VS Code</b><span>88%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+          <div class="skill" data-level="72">
+
+            <div><b>Vercel</b><span>72%</span></div>
+
+            <p class="bar"><span></span></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="projects">
+
+      <div class="container">
+
+        <p class="small-title">Projects</p>
+
+        <h2>Selected work</h2>
+
+
+        <div class="filter-buttons">
+
+          <button class="active" type="button" data-filter="all">All</button>
+
+          <button type="button" data-filter="html">HTML</button>
+
+          <button type="button" data-filter="css">CSS</button>
+
+          <button type="button" data-filter="javascript">JavaScript</button>
+
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project" data-tags="html css javascript">
+
+            <img src="assets/images/Spider Man Verse.jpg" alt="Spider Man Verse">
+
+            <div class="project-content">
+
+              <h3>Spider Man Verse</h3>
+
+              <p>Will fill when project completes</p>
+
+              <div class="tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+
+                <a href="https://vercel.com/" target="_blank" rel="noreferrer">Live Demo</a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="project" data-tags="html css">
+
+            <img src="assets/images/" alt="">
+
+            <div class="project-content">
+
+              <h3>No such cool project rn</h3>
+
+              <p></p>
+
+              <div class="tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+
+                <a href="https://vercel.com/" target="_blank" rel="noreferrer">Live Demo</a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="project" data-tags="css javascript">
+
+            <img src="assets/images/Elyra Club.png" alt="Elyra Club">
+
+            <div class="project-content">
+
+              <h3>Elyra Club</h3>
+
+              <p>Founder of Elyra Club.</p>
+
+              <div class="tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/Vinayak-Gamerzz/Elyra-Club" target="_blank" rel="noreferrer">GitHub</a>
+
+                <a href="www.elyraclub.dino.icu" target="_blank" rel="noreferrer">Live Demo</a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="achievements">
+
+      <div class="container">
+
+        <p class="small-title">Achievements</p>
+
+        <h2>Small wins</h2>
+
+
+        <div class="simple-list">
+
+          <article>
+
+            <span>Hackathons</span>
+
+            <h3>Built projects with a team</h3>
+
+            <p>Worked on quick ideas, shared tasks and learned how important communication is during a deadline.</p>
+
+          </article>
+
+          <article>
+
+            <span>Open Source</span>
+
+            <h3>Started reading real codebases</h3>
+
+            <p>Practiced understanding issues, pull requests and project structure on GitHub.</p>
+
+          </article>
+
+          <article>
+
+            <span>Competitions</span>
+
+            <h3>Submitted frontend projects</h3>
+
+            <p>Focused on clean UI, responsive design and simple project explanations.</p>
+
+          </article>
+
+          <article>
+
+            <span>Personal</span>
+
+            <h3>Made coding a regular habit</h3>
+
+            <p>Kept improving through small builds instead of waiting for one perfect project.</p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="experience">
+
+      <div class="container two-column">
+
+        <div>
+
+          <p class="small-title">Experience</p>
+
+          <h2>What I have been doing</h2>
+
+        </div>
+
+        <div class="simple-list compact">
+
+            <article>
+
+            <span>2026</span>
+
+            <h3>Elyra Club</h3>
+
+            <p>Built Elyra club and now working on it and making more teens code and join HC.</p>
+
+          </article>
+
+            <article>
+
+            <span>2025</span>
+
+            <h3>Hack Club</h3>
+
+            <p>Joined Hack Club.</p>
+
+          </article>
+
+          <article>
+
+            <span>2025</span>
+
+            <h3>Frontend practice projects</h3>
+
+            <p>Built responsive pages and small JavaScript features to improve my basics.</p>
+
+          </article>
+
+          <article>
+
+            <span>2025</span>
+
+            <h3>GitHub and open source practice</h3>
+
+            <p>Learned basic Git workflow, commits, branches and project reading.</p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="education">
+
+      <div class="container two-column">
+
+        <div>
+
+          <p class="small-title">Education</p>
+
+          <h2>Student life and self learning</h2>
+
+        </div>
+
+        <div class="simple-list compact">
+
+            <article>
+
+            <span>Completed</span>
+
+            <h3>Class 10th</h3>
+
+            <p>Completed class 10th CBSE with 92% grades and 100% in Computer Science.
+            </p>
+          </article>
+
+          <article>
+
+            <span>Current</span>
+
+            <h3>Computer Science Student</h3>
+
+            <p>Learning programming, web development and problem solving through classes and personal projects.
+            </p>
+          </article>
+
+          <article>
+
+            <span>Ongoing</span>
+
+            <h3>Self learning</h3>
+
+            <p>Using documentation, tutorials and coding challenges to practice consistently.</p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="certificates">
+
+      <div class="container">
+
+        <p class="small-title">Certificates</p>
+
+        <h2>Learning records</h2>
+
+
+
+        <div class="certificate-row">
+
+          <div>Frontend Basics</div>
+
+          <div>JavaScript Fundamentals</div>
+
+          <div>Git and GitHub</div>
+
+          <div>Backend Basics</div>
+
+          <div>Full Stack Dev</div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section" id="contact">
+
+      <div class="container two-column">
+
+        <div>
+
+          <p class="small-title">Contact</p>
+
+          <h2>Let's connect</h2>
+
+          <p>
+
+            If you want to talk about a project, internship or collaboration,
+
+            send me a message.
+
+          </p>
+
+          <div class="social-links">
+
+            <a href="https://github.com/Vinayak-Gamerzz" target="_blank" rel="noreferrer">GitHub</a>
+
+            <a href="https://www.linkedin.com/in/vinayak-tiwari-3317583bb/" target="_blank" rel="noreferrer">LinkedIn</a>
+
+            <a href="https://instagram.com/vinayak_here_15" target="_blank" rel="noreferrer">Instagram</a>
+
+            <a href="mailto:vinayaktiwari307@gmail.com">Email</a>
+
+          </div>
+
+        </div>
+
+        <form class="contact-form" action="mailto:vinayaktiwari307@gmail.com" method="post" enctype="text/plain">
+
+          <label for="name">Name</label>
+
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn primary-btn" type="submit">Send Message</button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <p>Copyright <span id="year"></span> Vinayak</p>
+
+      <p>No Frameworks were hurt</p>
+
+      <a href="#top">Back To Top</a>
+
+    </div>
+
+  </footer>
+
+
+  <button class="top-btn" type="button" aria-label="Back to top">Top</button>
+
+
+  <script src="script.js"></script>
+
+</body>
 
 </html>
