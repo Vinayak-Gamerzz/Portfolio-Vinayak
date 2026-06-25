@@ -4,13 +4,78 @@
 
     <head>
 
+        <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <title>Vinayak Tiwari</title>
 
+        <meta name="description" content="Vinayak Tiwari — Student builder interested in technology, competitive programming, and engineering. Portfolio showcasing projects, achievements, and technical writing.">
+
+        <meta name="keywords" content="Vinayak Tiwari, student portfolio, space technology, competitive programming, web developer, BitBuzz">
+
+        <meta name="author" content="Vinayak Tiwari">
+
+        <meta name="robots" content="index, follow">
+
+        <meta property="og:title" content="Vinayak Tiwari ">
+
+        <meta property="og:description" content="Student exploring space, technology, and engineering through projects, problem-solving, and writing.">
+
+        <meta property="og:type" content="website">
+
+        <meta property="og:url" content="https://Vinayak.bitbuzz.club">
+
+        <meta property="og:image" content="memoji.png">
+
+
+            <link rel="icon" href="memoji.png" />
+            <link rel="stylesheet" href="/style.css">
+            <link rel="stylesheet" href="/guestbook.css">
 
     </head>
 
     <body>
 
-        <section class="hero reveal">
+        <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">Hridhaan Sahay</div>
+
+    <!-- DESKTOP NAV -->
+    <ul class="nav-links">
+      <li><a href="/" data-route="home">Home</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#links" data-section="links">Links</a></li>
+    </ul>
+   
+    <!-- THEME -->
+    <button id="themeToggle" aria-label="Toggle theme">
+  <svg id="themeIcon" viewBox="0 0 24 24" width="22" height="22">
+    <path
+      d="M21 12.79A9 9 0 1111.21 3 
+         7 7 0 0021 12.79z"
+      fill="currentColor"
+    />
+  </svg>
+</button>
+
+  </div>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile">
+    <a href="/" data-route="home">Home</a>
+    <a href="#about" data-section="about">About</a>
+    <a href="#projects" data-section="projects">Projects</a>
+    <a href="#links" data-section="links">Links</a>
+  </div>
+</nav>
+
+  
+ <main id="page-home">
+
             <div class="hero-image">
                 <img src="Assets/Images/Me.jpeg" alt="Vinayak Tiwari" />
             </div>
@@ -26,13 +91,308 @@
                 </p>
 
                 <p class="typing-line">
-                <span id="typingText"></span><span class="typing-cursor">|</span>
+                <span id="typingText"></span>
+                <span class="typing-cursor">|</span>
                 </p>
 
 
             </div>
 
+
+
+        <section class="about" id="about">
+
+                <h2 class="section-title">About</h2>
+
+            <div class="content-wrapper">
+                <p>
+                    Hello!
+                </p>
+
+                <p>
+                    I'm Vinayak Tiwari, A high-school student interested in 
+                        <span id="yellow-highlight">Space and Technology</span>. 
+
+                    I explore both through coding, competitive programming, hackathons, research, astrophotography, building gadgets and projects.
+                </p>
+
+                <p>
+
+                    As a student still learning and growing, I enjoy connecting with people who share similar passions.
+
+                </p>
+
+                <p>
+
+                    I created 
+
+                        <a href="https://bitbuzz.club" target="_blank" class="premium-link">
+
+                            <span id="red-underline">Bitbuzz</span>
+
+                        </a>, 
+
+                    A platform that delivers innovation, space, and technology news without all the politics and noise.
+
+                </p>
+
+                <p>
+
+                    I also share what I learn through my 
+
+                        <a href="https://www.linkedin.com/in/Vinayak-Tiwari/" target="_blank" class="premium-link">  <span id="red-underline">Linkedin</span></a> 
+                    and 
+
+                        <a href="https://www.youtube.com/@bitbuzz-club" target="_blank" class="premium-link"> <span id="red-underline">Youtube</span></a>.
+                </p>
+
+                <p>
+                    You can Mail me at:
+
+                        <a href="mailto:hi@Vinayak.me" target="_blank" class="premium-link"> <span id="red-underline">hi@Vinayak.me</span></a>. 
+  
+                </p>
+
+            </div>
+
         </section>
+
+        <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+
+        <!-- LINKS -->
+
+        <section class="links reveal" id="links">
+
+                    <h2>Connect with me</h2>
+
+                        <p class="links-text">
+                            Here are my social handles, feel free to connect and say hi
+                        </p>
+
+            <div class="icon-links">
+
+                <!-- GitHub -->
+
+                    <a href="https://github.com/Vinayak-s" target="_blank" aria-label="GitHub">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.38-3.88-1.38-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.2-3.07-.12-.3-.52-1.52.12-3.17 0 0 .97-.31 3.18 1.17a11 11 0 0 1 5.8 0c2.2-1.48 3.17-1.17 3.17-1.17.64 1.65.24 2.87.12 3.17.75.8 1.2 1.82 1.2 3.07 0 4.41-2.69 5.37-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.54A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+
+                        </svg>
+
+                    </a>
+
+                <!-- LinkedIn -->
+
+                    <a href="https://www.linkedin.com/in/Vinayak-Tiwari" target="_blank" aria-label="LinkedIn">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-5.25c0-1.25-.02-2.86-1.75-2.86-1.75 0-2.02 1.36-2.02 2.77V21H9z"/>
+
+                        </svg>
+
+                    </a>
+
+                <!-- YouTube -->
+
+                    <a href="https://www.youtube.com/@Astro-2HR" target="_blank" aria-label="YouTube">
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M23.5 6.5s-.23-1.64-.95-2.36c-.91-.95-1.93-.96-2.4-1.02C16.77 2.75 12 2.75 12 2.75s-4.77 0-8.14.37c-.47.06-1.49.07-2.4 1.02-.72.72-.95 2.36-.95 2.36S0 8.43 0 10.36v1.28c0 1.93.23 3.86.23 3.86s.23 1.64.95 2.36c.91.95 2.1.92 2.63 1.02 1.91.18 8.19.37 8.19.37s4.77-.01 8.14-.38c.47-.06 1.49-.07 2.4-1.02.72-.72.95-2.36.95-2.36s.23-1.93.23-3.86v-1.28c0-1.93-.23-3.86-.23-3.86zM9.75 14.75v-6l6 3-6 3z"/>
+
+                        </svg>
+
+                    </a>
+
+                <!-- Slack -->
+
+                    <a href="https://hackclub.enterprise.slack.com/team/U0A1984JZBM" target="_blank" aria-label="Slack">
+
+                        <svg viewBox="0 0 32 32">
+
+                            <path d="M16 6c5.1 0 7.247.576 8.336 1.665C25.425 8.754 26 10.9 26 16c0 5.1-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.335C8.753 6.576 10.9 6 16 6zm12 10C28 6 26 4 16 4S4 6 4 16s2 12 12 12 12-2 12-12z"/>
+
+                            <path d="M13.867 8a1.605 1.605 0 0 0-1.48.988 1.594 1.594 0 0 0 .001 1.224 1.598 1.598 0 0 0 1.479.988h1.6V9.6a1.596 1.596 0 0 0-.988-1.478A1.604 1.604 0 0 0 13.867 8zm0 4.267H9.6a1.604 1.604 0 0 0-1.479.988 1.596 1.596 0 0 0 .347 1.742 1.601 1.601 0 0 0 1.132.47h4.267a1.605 1.605 0 0 0 1.478-.989A1.596 1.596 0 0 0 15 12.736a1.602 1.602 0 0 0-1.132-.47zM24 13.867a1.596 1.596 0 0 0-.987-1.478 1.605 1.605 0 0 0-1.745.347 1.597 1.597 0 0 0-.468 1.13v1.6h1.6a1.605 1.605 0 0 0 1.479-.988c.08-.194.121-.402.121-.611zm-4.267 0V9.6a1.594 1.594 0 0 0-.987-1.478 1.605 1.605 0 0 0-1.745.347 1.6 1.6 0 0 0-.468 1.131v4.267a1.596 1.596 0 0 0 .987 1.477 1.605 1.605 0 0 0 1.226 0 1.601 1.601 0 0 0 .987-1.477zM18.133 24a1.603 1.603 0 0 0 1.6-1.6 1.595 1.595 0 0 0-.987-1.478 1.605 1.605 0 0 0-.613-.122h-1.6v1.6a1.597 1.597 0 0 0 1.6 1.6zm0-4.267H22.4a1.605 1.605 0 0 0 1.479-.988 1.596 1.596 0 0 0-.347-1.742 1.6 1.6 0 0 0-1.132-.47h-4.267a1.605 1.605 0 0 0-1.478.989A1.596 1.596 0 0 0 17 19.264a1.602 1.602 0 0 0 1.132.47zM8 18.133a1.596 1.596 0 0 0 1.6 1.6 1.605 1.605 0 0 0 1.479-.988c.08-.194.121-.402.121-.612v-1.6H9.6a1.605 1.605 0 0 0-1.479.989c-.08.194-.121.402-.121.611zm4.267 0V22.4a1.595 1.595 0 0 0 .987 1.478 1.603 1.603 0 0 0 1.745-.347 1.6 1.6 0 0 0 .468-1.131v-4.266a1.597 1.597 0 0 0-1.6-1.6 1.603 1.603 0 0 0-1.6 1.6z"/>
+
+                        </svg>
+
+                    </a>
+
+    
+            </div>
+        </section>
+
+  
+    <!-- PROJECTS -->
+
+    <section class="projects" id="projects">
+
+                    <h2>Projects</h2>
+
+                        <p class="projects-subtitle">
+
+                            Some things I've built across hardware, web, and experiments.
+
+                        </p>
+
+                        <p class="projects-subtitle">
+
+                            Most of my projects are on GitHub view them
+
+                            <a href="https://github.com/Vinayak-s/" target="_blank" class="premium-link"> <span id="red-underline">here</span></a>. 
+
+                        </p>   
+
+            <div class="projects-grid">
+
+        <!-- BitBuzz -->
+
+            <div class="project-card">
+
+                    <span class="tag">Web · Platform</span>
+
+                        <img src="Screenshot 2026-05-09 172150.png" alt="BitBuzz project image" />
+
+                    <h3>BitBuzz</h3>
+
+                        <p>
+
+                            A global platform with 23,500+ users from 50+ countries,
+                            delivering news about innovation, space, and tech news with out any bias or politics.
+          
+                        </p>
+
+                <div class="project-links">
+
+                    <a href="https://www.bitbuzz.club/" target="_blank">Visit →</a>
+
+                </div>
+
+            </div>
+
+        <!-- Twilara Hack Club -->
+
+            <div class="project-card">
+
+                        <span class="tag">Leadership · Hack Club</span>
+
+                            <img class="project-thumb" src="Screenshot 2025-12-27 232123.png" alt="Twilara Hack Club Thumbnail">
+
+                            <img class="hackclub-badge" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club Badge" width="25"/>
+
+                    <h3>Twilara — Hack Club</h3>
+
+                        <p>
+
+                            I co-founded and lead Twilara — a Hack Club chapter at SRGS Noida where we build 
+                            robots, software, games & hardware. A student-led community supported by Hack Club 
+                            where we ship ideas by building.
+
+                        </p>
+
+                <div class="project-links">
+
+                    <a href="https://hackers.bitbuzz.club" target="_blank">Visit →</a>
+
+                </div>
+
+            </div>
+
+
+        <!-- Chanakya AI -->
+
+            <div class="project-card">
+
+                        <span class="tag">AI · Chatbot</span>
+
+                        <img src="Screenshot 2026-05-09 172557.png" alt="Chanakya AI project image" />
+
+                    <h3>Chanakya AI</h3>
+
+                        <p>
+
+                        An AI Research & Fact-Checking Assistant built for BitBuzz, inspired by Chanakya's principles
+                        to provide strategic and wisdom-driven responses.
+                
+                        </p>
+
+                <div class="project-links">
+
+                    <a href="https://www.bitbuzz.club/chanakya-ai" target="_blank">Explore →</a>
+
+                </div>
+            
+            </div>
+
+
+      
+        <!-- Focus Orb -->
+
+            <div class="project-card">
+                
+                    <span class="tag">Web · StoryTelling</span>
+
+                        <img src="https://cdn.hackclub.com/019e3814-c2d8-7030-9574-9f87dafd9d9e/image.png" alt="Focus Orb project image"/>
+
+                    <h3>The Big Bang</h3>
+
+                        <p>
+
+                            A Site to Storytell the creation of Universe due to Big Bang
+
+                        </p>
+
+                <div class="project-links">
+
+                    <a href="https://the-big-bang-project.netlify.app/" target="_blank">Open GitHub →</a>
+
+                </div>
+
+            </div>
+
+        <!-- Astronomy Macropad -->
+            <div class="project-card">
+
+                    <span class="tag">Web · YSWS Program</span>
+
+                        <img src="https://cdn.hackclub.com/019e7c6e-c5b8-7c74-9591-1b11693e32d1/image.png" alt="Focus Orb project image"/>
+
+                    <h3>Arcade</h3>
+
+                        <p>
+
+                            A Site I made for an YSWS(You Ship We Ship) Program at Hack Club where teens submit there projects related to theme of Arcade and get rewarded for there projects, I am also the organizer of this event
+
+                        </p>
+
+                <div class="project-links">
+
+                    <a href="https://arcade-ysws.vercel.app/" target="_blank">Visit Site →</a>
+
+                </div>
+
+            </div>
+
+    </section>
+
+  <section class="achievements-cta">
+  <div class="cta-card">
+    <h3>Vinayak's Scrapbook</h3>
+
+    <p>
+      The archive. Every project, every lesson, every mistake that is worth keeping.
+    </p>
+
+    <a href="https://scrapbook.Vinayak.me/" class="cta-btn" target="_blank" rel="noopener noreferrer">
+      Visit Scrapbook →
+    </a>
+
+  </div>
+
+</section>
 
     </body>
 
